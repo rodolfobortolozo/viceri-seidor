@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//127.0.0.1:1521/XE
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: VICERI
+    password: SEIDOR
+
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
