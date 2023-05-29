@@ -8,9 +8,26 @@ spring:
     username: VICERI
     password: SEIDOR
 
+  flyway:
+    baselineOnMigrate: true
+
   jpa:
     database-platform: org.hibernate.dialect.Oracle12cDialect
     hibernate:
       ddl-auto: none
     show-sql: true
     open-in-view: false
+
+jwt_secret: fprtiub5Kw4Yp68Dnbdfog58pG6b86benofgjhb
+
+security:
+  jwt:
+    expiration: 86400000
+
+openapi:
+  dev-url: http://localhost:8081
+  prod-url: https://viceri.com.br/todo
+
+springdoc:
+  swagger-ui:
+    defaultModelsExpandDepth : -1

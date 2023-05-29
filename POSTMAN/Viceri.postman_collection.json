@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "a67c55eb-7dea-4b83-a051-6c583110a5bb",
+		"name": "Viceri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22531782"
+	},
+	"item": [
+		{
+			"name": "Tarefas",
+			"item": [
+				{
+					"name": "Buscar Todos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJWSUNFUkkgU0VJRE9SIiwic3ViIjoiVE8tRE8iLCJpYXQiOjE2ODUzMDAxMDQsImV4cCI6MTY4NTM4NjUwNCwiZW1haWwiOiJyb2RvbGZvYm9ydG9sb3pvQGdtYWlsLmNvbSJ9.HX67MRtSY8p1u6Ma8FzHOTfe5An2INiimvMKIByADpI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/tarefas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"tarefas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tarefas Pendentes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJWSUNFUkkgU0VJRE9SIiwic3ViIjoiVE8tRE8iLCJpYXQiOjE2ODUzMDAxMDQsImV4cCI6MTY4NTM4NjUwNCwiZW1haWwiOiJyb2RvbGZvYm9ydG9sb3pvQGdtYWlsLmNvbSJ9.HX67MRtSY8p1u6Ma8FzHOTfe5An2INiimvMKIByADpI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/tarefas/pendentes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"tarefas",
+								"pendentes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tarefas concluida",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJWSUNFUkkgU0VJRE9SIiwic3ViIjoiVE8tRE8iLCJpYXQiOjE2ODUzMDAxMDQsImV4cCI6MTY4NTM4NjUwNCwiZW1haWwiOiJyb2RvbGZvYm9ydG9sb3pvQGdtYWlsLmNvbSJ9.HX67MRtSY8p1u6Ma8FzHOTfe5An2INiimvMKIByADpI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/tarefas/2/concluida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"tarefas",
+								"2",
+								"concluida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salvar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJWSUNFUkkgU0VJRE9SIiwic3ViIjoiVE8tRE8iLCJpYXQiOjE2ODUzMDAxMDQsImV4cCI6MTY4NTM4NjUwNCwiZW1haWwiOiJyb2RvbGZvYm9ydG9sb3pvQGdtYWlsLmNvbSJ9.HX67MRtSY8p1u6Ma8FzHOTfe5An2INiimvMKIByADpI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Descricao\": \"Teste\",\r\n  \"Prioridade\":\"ALTA\",\r\n  \"DtaTarefa\": \"27/05/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/tarefas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"tarefas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJWSUNFUkkgU0VJRE9SIiwic3ViIjoiVE8tRE8iLCJpYXQiOjE2ODUyODAxMTYsImV4cCI6MTY4NTM2NjUxNiwiZW1haWwiOiJhZG1pbjFAYWRtaW4uY29tIn0.KJMuYNG2s-t0_FEW0KmiPHPqMFc9nzBGkJViTTONVcw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Prioridade\":\"MEDIA\",\r\n  \"Descricao\": \"TESTE TESTE asdasd  TESTE\",\r\n  \"DtaTarefa\": \"27/05/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/tarefas/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"tarefas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJWSUNFUkkgU0VJRE9SIiwic3ViIjoiVE8tRE8iLCJpYXQiOjE2ODUyODAxMTYsImV4cCI6MTY4NTM2NjUxNiwiZW1haWwiOiJhZG1pbjFAYWRtaW4uY29tIn0.KJMuYNG2s-t0_FEW0KmiPHPqMFc9nzBGkJViTTONVcw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"prioridade\":\"ALTA\",\r\n  \"descricao\": \"TESTE TESTE TESTE TESTE\",\r\n  \"concluida\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/tarefas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"tarefas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuários",
+			"item": [
+				{
+					"name": "Registro Usuário",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Nome\" : \"ADMIN\",\r\n  \"Email\" : \"1admin@admin.com\",\r\n  \"Senha\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/registro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"registro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Usuário",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\" : \"rodolfobortolozo@gmail.com\",\r\n  \"Senha\" : \"1234561\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
